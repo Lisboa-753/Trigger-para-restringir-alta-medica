@@ -1,4 +1,4 @@
-# Trriger para restringir alta médica.
+# Trigger para restringir alta médica.
 
 Este projeto contém uma trigger (função no banco de dados Oracle) que restringe altas médicas feita para os pacientes.
 
