@@ -1,14 +1,14 @@
 # Trriger para restringir alta médica.
 
-Este projeto contém uma trigger (função no banco de dados Oracle) que restringe a altas médicas feita para os pacietes.
+Este projeto contém uma trigger (função no banco de dados Oracle) que restringe altas médicas feita para os pacientes.
 
 ## Objetivo
 
-O objetivo principal desta trigger é **restringir a alta médica apenas para os médicos no sistema** esse gatilho verifica:
+O objetivo principal desta trigger é **restringir a alta médica apenas para os médicos no sistema**. Esse gatilho verifica:
 
 - Se o usuário logado possui um prestador do tipo médico;
 - Se o usuário logado possui prestador
-- Caso não haja, retorna um erro tratado dos exception com o RAISE_APPLICATION_ERROR.
+- Caso não encontre o usuário/prestador no banco de dados, irá ser retornado um erro tratado nos exceptions com o RAISE_APPLICATION_ERROR.
 
 ## Como funciona
 
